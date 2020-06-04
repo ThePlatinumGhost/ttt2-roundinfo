@@ -48,7 +48,7 @@ if SERVER then
 		--add non used roles to innocent
 		for role, do_print in pairs(printrls) do
 			if not do_print then
-				rls[ROLE_INNOCENT] = rls[ROLE_INNOCENT] + (rls[role] or 0)
+				rls[ROLE_INNOCENT] = rls[ROLE_INNOCENT] --+ (rls[role] or 0)
 			end
 		end
 
